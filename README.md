@@ -1,5 +1,5 @@
-#This is my profile
+# This is my profile
 
-###Institute Of Software Engineering
+### Institute Of Software Engineering
 
 ![Image of Yaktocat](assets/images/Android.png)
