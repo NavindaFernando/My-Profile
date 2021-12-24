@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple web layout - case 2</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/css/all.css">
+    <style>
+
+        /*header start*/
+        header{
+            height: 80px;
+            position: relative;
+            box-shadow: -2px 6px 9px -4px #ac9292;
+        }
+        header>img{
+            width: 111px;
+            margin: 25px
+        }
+        header>ul{
+            position: absolute;
+            right: 30px;
+            bottom: 0;
+            list-style: none;
+            font-family: 'Pacifico', cursive;
+            padding: 15px;
+        }
+        header>ul>li{
+            padding: 0 10px 0 10px;
+            display: inline-block;
+        }
+        header>ul>li:hover{
+            cursor: pointer;
+            color: red;
+        }
+        /*header end*/
+
+        /*main start*/
+        main{
+            position: relative;
+        }
+
+        main>nav{
+            width: 220px;
+            background: blueviolet;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            color: white;
+        }
+
+        main>nav>ul{
+            list-style: none;
+            font-size: 20px;
+            margin-top: 39px;
+        }
+
+        main>nav>ul>li{
+            padding-bottom: 25px;
+            font-family: Ubuntu;
+        }
+
+        main>nav>ul>li>a{
+            text-decoration: none;
+            color: white;
+            padding-bottom: 4px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        main>nav>ul>li>i{
+            color: black;
+            margin-right: 10px;
+        }
+
+        main>nav>ul>li>a:hover{
+            color: red;
+        }
+
+        main>section{
+            /*position: relative;
+            left: 220px;*/
+            margin-left: 220px;
+            padding: 10px;
+            min-height: 515px;
+        }
+
+        main>section>section{
+            height: 250px;
+            position: relative;
+        }
+
+        main>section>section>div{
+            position: absolute;
+            height: 100%;
+            width: calc(100%/3);
+        }
+
+        main>section>section>div:nth-child(1){
+            left: 0;
+            background-image: url("images/birds.jpg");
+            background-size: cover;
+        }
+
+        main>section>section>div:nth-child(2){
+            left: calc(100%/3);
+            background-image: url("images/flower.jpg");
+            background-size: cover;
+            border-left: 5px solid white;
+        }
+
+        main>section>section>div:nth-child(3){
+            left: calc((100%/3)*2);
+            background-image: url("images/tree.jpg");
+            background-size: cover;
+            border-left: 5px solid white;
+        }
+        /*main end*/
+
+        /*footer start*/
+        body>footer{
+            height: 50px;
+            background-color: gray;
+        }
+
+        body>footer>p{
+            margin-top: 0;
+            text-align: center;
+            padding: 18px;
+            color: white;
+            font-weight: bold;
+        }
+        /*footer end*/
+
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="images/ijse.png" alt="">
+    <ul>
+        <li>Home</li>
+        <li>Service</li>
+        <li>Contact</li>
+        <li>About Us</li>
+    </ul>
+</header>
+
+<main>
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i><a href="index4.html">Home</a></li>
+            <li><i class="fas fa-globe-americas"></i><a href="index5.html">Service</a></li>
+            <li><i class="fas fa-id-badge"></i><a href="index6.html">Contact</a></li>
+            <li><i class="fas fa-info-circle"></i><a href="index7.html">About Us</a></li>
+        </ul>
+    </nav>
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur, doloremque error est
+            facere, fuga hic id ipsum magnam nam perspiciatis placeat quasi ratione, tenetur velit. Excepturi iste
+            molestias numquam.</p>
+        <p>Aliquam aperiam aspernatur assumenda, beatae, commodi dolor dolore doloremque earum esse incidunt magnam
+            maxime molestiae nesciunt odio qui quisquam rem repudiandae saepe sed tempore? Fuga fugit maxime nesciunt
+            odit veniam!</p>
+        <p>Omnis quas quod repellendus? Adipisci fugit illo maxime quisquam reprehenderit sint sit voluptatibus. Aliquid
+            amet aut error facilis, iusto modi mollitia numquam porro, praesentium quas rem repellat rerum tempore
+            temporibus?</p>
+        <p>Animi atque corporis earum eveniet, harum iusto perspiciatis placeat quia quo ratione repellat sequi, sint
+            suscipit vel veritatis. Dicta eligendi ipsa, maxime optio pariatur quasi quisquam rem soluta sunt ullam!</p>
+        <p>Omnis quas quod repellendus? Adipisci fugit illo maxime quisquam reprehenderit sint sit voluptatibus. Aliquid
+            amet aut error facilis, iusto modi mollitia numquam porro, praesentium quas rem repellat rerum tempore
+            temporibus?</p>
+        <p>Animi atque corporis earum eveniet, harum iusto perspiciatis placeat quia quo ratione repellat sequi, sint
+            suscipit vel veritatis. Dicta eligendi ipsa, maxime optio pariatur quasi quisquam rem soluta sunt ullam!</p>
+        <p>Animi atque corporis earum eveniet, harum iusto perspiciatis placeat quia quo ratione repellat sequi,</p>
+
+    </section>
+</main>
+
+<footer>
+    <p><small>Developed by IJSE</small></p>
+</footer>
+
+</body>
+</html>
