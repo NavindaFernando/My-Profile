@@ -19,6 +19,350 @@
     <meta name="theme-color" content="#282828">
 
     <style>
+        header {
+            /*border: 1px solid red;*/
+            position: relative;
+            height:82px;
+        }
+
+        header>img{
+            /*border: 1px solid green;*/
+            position: relative;
+            width: 55px;
+            left: 65px;
+            top: 14px;
+        }
+
+        header>ul{
+            position: absolute;
+            right: 100px;
+            bottom: 3px;
+            top: 15px;
+            list-style: none;
+            font-family: 'Open Sans', sans-serif;
+            /*font-family: 'Pacifico', cursive;
+            font-family: 'Roboto', sans-serif;    font-style: unset;*/
+        }
+
+        header>ul>li{
+            /*border: 1px solid green;*/
+            display:inline-block;
+            padding: 0 14px 0 14px;
+            font-size: 18px;
+        }
+
+        header>ul>li:hover{
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        main>section:nth-child(1){
+            /*border: 1px solid black;*/
+            height: 736px;
+        }
+
+        main>section:nth-child(1)>p{
+            /*border: 1px solid deeppink;*/
+            position: relative;
+            font-family: 'Open Sans', sans-serif;
+            left: 200px;
+            width: 600px;
+        }
+
+        main>section:nth-child(1)>p:nth-child(1){
+            font-size: 22px;
+            left: 201px;
+            top: 160px;
+        }
+
+        main>section:nth-child(1)>p:nth-child(2){
+            top: 115px;
+            left: 198px;
+            font-size: 46px;
+            font-weight: bold;
+        }
+
+        main>section:nth-child(1)>p:nth-child(3){
+            top: 70px;
+            left: 201px;
+            font-size: 22px;
+        }
+
+        main>section:nth-child(1)>p:nth-child(4){
+            top: 60px;
+            left: 201px;
+            font-size: 16px;
+        }
+
+        main>section:nth-child(1)>img:nth-child(5){
+            /*border: 1px solid red;*/
+            position: absolute;
+            width: 532px;
+            top: 42px;
+            left: 750px;
+        }
+
+        main>section:nth-child(1)>i:nth-child(6){
+            position: relative;
+            font-size: 15px;
+            left: 200px;
+            top: 60px;
+        }
+
+        main>section:nth-child(1)>i:nth-child(7){
+            position: relative;
+            font-size: 15px;
+            left: 210px;
+            top: 58px;
+        }
+
+        main>section:nth-child(1)>i:nth-child(8){
+            position: relative;
+            font-size: 15px;
+            left: 220px;
+            top: 58px;
+        }
+
+        main>section:nth-child(1)>i:nth-child(9){
+            position: relative;
+            font-size: 16px;
+            left: 232px;
+            top: 59px;
+        }
+
+        main>section:nth-child(1)>i:nth-child(10){
+            position: relative;
+            font-size: 15px;
+            left: 242px;
+            top: 58px;
+        }
+
+        main>section:nth-child(1)>i:nth-child(11){
+            position: relative;
+            font-size: 15px;
+            left: 252px;
+            top: 58px;
+        }
+
+        main>section:nth-child(1)>i:nth-child(12){
+            position: relative;
+            font-size: 15px;
+            left: 262px;
+            top: 58px;
+        }
+
+        main>section:nth-child(1)>div{
+            position: relative;
+            border: 2px solid black;
+            border-radius: 30px;
+            width: 150px;
+            left: 198px;
+            top: 78px;
+            height: 45px;
+        }
+
+        main>section:nth-child(1)>div>p {
+            /*border: 1px solid red;*/
+            position: relative;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Roboto', sans-serif;    font-style: unset;
+            bottom: 2px;
+            text-align: center;
+        }
+
+        main>section:nth-child(2){
+            /*border: 1px solid red;*/
+            height: 736px;
+            background-color: #171717;
+        }
+
+        main>section:nth-child(2)>img{
+            /*border: 1px solid deeppink;*/
+            position: relative;
+            width: 950px;
+            right: 88px;
+            top: 102px;
+        }
+
+        main>section:nth-child(2)>p{
+            /*border: 1px solid green;*/
+            position: relative;
+            font-family: 'Open Sans', sans-serif;
+            color: #BDB8BA;
+        }
+
+        main>section:nth-child(2)>p:nth-child(2){
+            font-size: 16px;
+            left: 701px;
+            bottom: 451px;
+            width: 500px;
+        }
+
+        main>section:nth-child(2)>p:nth-child(3){
+            font-weight: bold;
+            font-size: 40px;
+            left: 700px;
+            bottom: 490px;
+            width: 500px;
+        }
+
+        main>section:nth-child(2)>p:nth-child(4) {
+            font-size: 15px;
+            left: 701px;
+            bottom: 520px;
+            width: 500px;
+        }
+
+        main>section:nth-child(2)>p:nth-child(5) {
+            font-size: 15px;
+            left: 701px;
+            bottom: 520px;
+            width: 600px;
+        }
+
+        main>section:nth-child(2)>p:nth-child(6) {
+            font-size: 15px;
+            left: 701px;
+            bottom: 520px;
+            width: 500px;
+        }
+
+        /*        main>section:nth-child(2)>i{
+            !*border: 1px solid red;*!
+            position: relative;
+            color: #BDB8BA;
+            font-size: 11px;
+            bottom: 604px;
+        }
+
+        main>section:nth-child(2)>i:nth-child(7){
+            left: 700px;
+            font-size: 12px;
+        }
+
+        main>section:nth-child(2)>i:nth-child(8){
+            left: 710px;
+        }
+
+        main>section:nth-child(2)>i:nth-child(9){
+            left: 720px;
+        }
+
+        main>section:nth-child(2)>i:nth-child(10){
+            left: 730px;
+        }
+
+        main>section:nth-child(2)>i:nth-child(11){
+            left: 740px;
+        }
+
+        main>section:nth-child(2)>i:nth-child(12){
+            left: 750px;
+        }
+
+        main>section:nth-child(2)>i:nth-child(13){
+            left: 760px;
+        }
+
+        main>section:nth-child(2)>i:nth-child(14){
+            left: 757px;
+            font-size: 7px;
+            bottom: 605px;
+        }
+
+        main>section:nth-child(2)>i:nth-child(15){
+            left: 765px;
+        }
+
+        main>section:nth-child(2)>i:nth-child(16){
+            left: 764px;
+            font-size: 7px;
+            bottom: 605px;
+        }
+
+        main>section:nth-child(2)>i:nth-child(17){
+            left: 762px;
+            font-size: 7px;
+            bottom: 605px;
+        }*/
+
+        main>section:nth-child(2)>div{
+            /*border: 1px solid red;*/
+            position: relative;
+            background-color: #BDB8BA;
+            border-radius: 10px;
+            left: 700px;
+            bottom: 518px;
+            width: 120px;
+            height: 43px;
+        }
+
+        main>section:nth-child(2)>div>p{
+            /*border: 1px solid red;*/
+            position: relative;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Roboto', sans-serif;
+            font-style: unset;
+            font-size: 15px;
+            text-align: center;
+            top: 14px;
+        }
+
+        main>section:nth-child(3){
+            border: 1px solid darkslategray;
+            height: 736px;
+        }
+
+        main>section:nth-child(3)>img{
+            /*border: 1px solid green;*/
+            position: absolute;
+            width: 220px;
+        }
+
+        main>section:nth-child(3)>i{
+            position: absolute;
+            font-size: 30px;
+            color: #BDB8BA;
+        }
+
+        main>section:nth-child(3)>img:nth-child(2){
+            right: 0;
+            left: 0;
+            top: 1750px;
+            margin: auto;
+        }
+
+        main>section:nth-child(3)>i:nth-child(3){
+            right: 0;
+            left: 0;
+            top: 1790px;
+            text-align: center;
+        }
+
+        main>section:nth-child(3)>p:nth-child(4){
+            position: relative;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            color: #BDB8BA;
+            right: 0;
+            left: 0;
+            top: 260px;
+            width: max-content;
+            /*text-align: center;*/
+            margin: auto;
+            border: 1px solid red;
+        }
+
+
+        main>section:nth-child(3)>img:nth-child(6){
+            right: 0;
+            left: 0;
+            top: 1942px;
+            margin: auto;
+        }
+
 
     </style>
 </head>
@@ -38,9 +382,107 @@
         </ul>
     </header>
     <main>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section>
+
+            <p>Hi</p>
+            <p>MY NAME IS NAVINDA</p>
+            <p>Software Engineer</p>
+            <p> Web / UI / UX  designer & developer from srilanka. <br> I create custom websites & software to help businessess <br> do better online.</p>
+
+            <img src="assets/images/BW.png" alt="">
+
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github"></i>
+            <i class="fas fa-envelope"></i>
+            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-linkedin-in"></i>
+
+            <div>
+                <p>My Projects</p>
+            </div>
+
+        </section>
+
+        <section>
+
+            <img src="assets/images/BW02.png" alt="">
+
+            <p>Hi, I am Navinda Fernando</p>
+            <p>a software engineer</p>
+            <p>I am from wennappuwa, Srilanka. A place of beauty and nature. <br> I love art and design. I always try to design
+                stuff <br> with my unique point of view. <br></p>
+            <p>I am a senior programmer with good knowledge of development & web design. <br> I'm an experienced software engineer
+                who constantly seeks out <br> innovative solutions to everyday problems.</p>
+            <p> I study about java, python, javascript, c++, c, html, css and my main <br> language is java. I like to create and
+                contribute to  open source projects. <br> That helps me to learn a ton of new stuff, grow as a developer and
+                <br> support other open source projects.</p>
+
+            <!--<i class="fab fa-java"></i>
+            <i class="fab fa-python"></i>
+            <i class="fab fa-js-square"></i>
+            <i class="fab fa-cuttlefish"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-cuttlefish"></i>
+            <i class="fas fa-hashtag"></i>
+            <i class="fab fa-cuttlefish"></i>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-plus"></i>-->
+
+            <div>
+                <p>Download CV</p>
+            </div>
+
+        </section>
+
+        <section>
+
+            <p></p>
+
+                <img src="assets/images/shape.png" alt="">
+                <i class="fas fa-globe"></i>
+                <p>Web Dev</p>
+                <p>I have done a lot of web <br> development projects, <br> you have the ability to <br> see them</p>
+
+
+
+                <img src="assets/images/shape.png" alt="">
+                <i class="fas fa-cog"></i>
+                <p>Standalone Dev</p>
+                <p>I have done a lot of <br> standalone applications, <br> you have the ability to <br> see them</p>
+
+
+
+                <img src="assets/images/shape.png" alt="">
+                <i class="fab fa-sketch"></i>
+                <p>Web Design</p>
+                <p>I have done a lot <br> of web designs, you <br> have the ability to <br> see them</p>
+
+
+
+                <img src="assets/images/shape.png" alt="">
+                <i class="fas fa-drafting-compass"></i>
+                <p>UI / UX Design</p>
+                <p>I have done a lot <br> of ui/ux designs, you <br> have the ability to <br> see them</p>
+
+
+
+                <img src="assets/images/shape.png" alt="">
+                <i class="fab fa-android"></i>
+                <p>Mobile App Dev</p>
+                <p>I have done a lot of <br> mobile applications, you <br> have the ability to see <br> them</p>
+
+
+
+                <img src="assets/images/shape.png" alt="">
+                <i class="fas fa-lightbulb"></i>
+                <p>Innovative Ideas</p>
+                <p>You can get new <br> ideas for your application <br> to build it more <br> creatively</p>
+
+        </section>
+
         <section></section>
         <section></section>
         <section></section>
