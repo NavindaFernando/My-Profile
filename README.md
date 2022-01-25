@@ -18,7 +18,7 @@ mockup : https://www.figma.com/file/3Q0xhTazPepWub1jOExIa9/Untitled?node-id=0%3A
 Destop UI
 </h6>
 
-![web ui](https://user-images.githubusercontent.com/86073690/150748462-68ed71c2-7421-4fe5-aa37-33ba77501784.jpg)
+![my profile destop](https://user-images.githubusercontent.com/86073690/150965808-4595b1ec-b3ab-4895-b323-fc4d5544ccfe.jpg)
 
 ***
 
@@ -26,4 +26,4 @@ Destop UI
 Mobile UI
 </h6>
 
-![web ui 02](https://user-images.githubusercontent.com/86073690/150936478-a24be335-3ec8-4d92-bd14-28f14e395f4c.jpg)
+![my profile mobile](https://user-images.githubusercontent.com/86073690/150967528-754b37cd-59cd-4935-b06f-b69c27321515.jpg)
