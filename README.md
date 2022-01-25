@@ -26,6 +26,4 @@ Destop UI
 Mobile UI
 </h6>
 
-![web ui 2](https://user-images.githubusercontent.com/86073690/150934855-41334d18-6fd3-47c5-b76c-3c52cde9f484.jpg)
-
-***
+![web ui 02](https://user-images.githubusercontent.com/86073690/150936478-a24be335-3ec8-4d92-bd14-28f14e395f4c.jpg)
