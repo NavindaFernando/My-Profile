@@ -25,3 +25,7 @@ Destop UI
 <h6 align="center">
 Mobile UI
 </h6>
+
+![web ui 2](https://user-images.githubusercontent.com/86073690/150934855-41334d18-6fd3-47c5-b76c-3c52cde9f484.jpg)
+
+***
