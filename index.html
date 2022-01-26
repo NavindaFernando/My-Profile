@@ -59,11 +59,17 @@
             font-weight: bold;
         }
 
+        /*header>i:nth-child(3){
+            display: none;
+        }
+
+        header>i:nth-child(4){
+         display: none;
+        }*/
+
         /*end header*/
 
-        /*start header media*/
-
-        /*end header media*/
+        /*start section 01*/
 
         main>section:nth-child(1){
             /*border: 1px solid black;*/
@@ -179,6 +185,86 @@
             bottom: 2px;
             text-align: center;
         }
+
+        /*end section 01*/
+
+        /*start media queries*/
+
+        /*mobile*/
+        @media all and (max-width: 320px){
+
+            header {
+                /*position: relative;*/
+                height:50px;
+                width: 100vw;
+                background-color: black;
+            }
+
+            header>img{
+                display: none;
+            }
+
+            header>ul{
+                display: none;
+            }
+
+            header>ul>li{
+                display: none;
+            }
+
+            header>i:nth-child(3){
+                position: relative;
+                font-size: 22px;
+                left: 17px;
+                color: white;
+                top: 10px;
+            }
+
+            header>i:nth-child(4){
+                position: relative;
+                font-size: 18px;
+                right: 6px;
+                color: white;
+                top: 17px;
+            }
+
+            header>i:nth-child(5){
+                position: relative;
+                display: flex;
+                font-size: 16px;
+                left: 88%;
+                top: 2px;
+                color: white;
+                transform: translateY(-50%);
+            }
+
+          }
+
+
+        /*        @media all and (min-width: 320px) and (max-width: 375px){
+
+        }
+
+        @media all and (min-width: 375px) and (max-width: 425px){
+
+        }
+
+        !*tablet*!
+        @media all and (min-width: 425px) and (max-width: 768px){
+
+        }
+
+        !*laptop (M)*!
+        @media all and (min-width: 768px) and (max-width: 1024px){
+
+        }
+
+        !*laptop (L)*!
+        @media all and (min-width: 1024px) and (max-width: 1440px){
+
+        }*/
+
+        /*end media queries*/
 
         main>section:nth-child(2){
             /*border: 1px solid red;*/
@@ -1866,6 +1952,10 @@
             <li>Feedback</li>
             <li>Contact</li>
         </ul>
+
+        <i class="fas fa-minus"></i>
+        <i class="fas fa-minus"></i>
+        <i class="fas fa-search"></i>
     </header>
 
     <main>
