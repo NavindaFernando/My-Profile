@@ -18,6 +18,11 @@ mockup : https://www.figma.com/file/3Q0xhTazPepWub1jOExIa9/Untitled?node-id=0%3A
 design environments
 </h6>
 
+<div align="center">
+  <img height="20" src = "https://img.shields.io/badge/Adobe Photoshop-white.svg?">
+  <img height="20" src = "https://img.shields.io/badge/Figma-white.svg?">
+</div>
+
 <h6 align="center">
 Destop UI
 </h6>
