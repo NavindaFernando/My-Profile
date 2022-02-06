@@ -15,7 +15,7 @@ mockup : https://www.figma.com/file/3Q0xhTazPepWub1jOExIa9/Untitled?node-id=0%3A
 </h6>
 
 <h6 align="center">
-Destop UI
+Desktop UI
 </h6>
 
 ![my profile destop](https://user-images.githubusercontent.com/86073690/150965808-4595b1ec-b3ab-4895-b323-fc4d5544ccfe.jpg)
