@@ -1867,136 +1867,35 @@
 
         /*start media queries*/
         /*mobile*/
-        /*@media all and (max-width: 320px){
+        @media all and (min-width: 50px) and (max-width: 375px){
+            /*head*/
+            #logo{
+                display: none;
+            }
 
-            header {
-                !*position: relative;*!
+            #head {
+                /*position: relative;*/
                 height:50px;
                 width: 100vw;
                 background-color: black;
             }
 
-            header>img{
+            #navHeaders{
                 display: none;
             }
 
-            header>ul{
-                display: none;
-            }
-
-            header>ul>li{
-                display: none;
-            }
-
-            header>i:nth-child(3){
+            #menuIcon{
+                /*border: 1px solid red;*/
+                display: block;
                 position: relative;
-                font-size: 22px;
-                left: 17px;
-                color: #a2a2a2;;
-                top: 10px;
+                width: 20px;
+                top: 14px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                opacity: 80%;
             }
-
-            header>i:nth-child(4){
-                position: relative;
-                font-size: 22px;
-                right: 6px;
-                color: #a2a2a2;;
-                top: 18px;
-            }
-
-            main>section:nth-child(1){
-                !*border: 1px solid red;*!
-                height: 736px;
-                background-color: black;
-                width: 100vw;
-            }
-
-            main>section:nth-child(1)>p{
-                !*border: 1px solid deeppink;*!
-                position: relative;
-                font-family: 'Open Sans', sans-serif;
-                left: 200px;
-                width: 600px;
-            }
-
-            main>section:nth-child(1)>p:nth-child(1){
-                display: none;
-            }
-
-            main>section:nth-child(1)>p:nth-child(2){
-                display: none;
-            }
-
-            main>section:nth-child(1)>p:nth-child(3){
-                display: none;
-            }
-
-            main>section:nth-child(1)>p:nth-child(4){
-                display: none;
-            }
-
-            main>section:nth-child(1)>img:nth-child(5){
-                !* border: 1px solid red; *!
-                position: absolute;
-                width: 372px;
-                top: 10px;
-                left: -41px;
-                !* right: 852px; *!
-                opacity: 60%;
-            }
-
-            main>section:nth-child(1)>i:nth-child(6){
-                display: none;
-            }
-
-            main>section:nth-child(1)>i:nth-child(7){
-                display: none;
-            }
-
-            main>section:nth-child(1)>i:nth-child(8){
-                display: none;
-            }
-
-            main>section:nth-child(1)>i:nth-child(9){
-                display: none;
-            }
-
-            main>section:nth-child(1)>i:nth-child(10){
-                display: none;
-            }
-
-            main>section:nth-child(1)>i:nth-child(11){
-                display: none;
-            }
-
-            main>section:nth-child(1)>i:nth-child(12){
-                display: none;
-            }
-
-            main>section:nth-child(1)>div{
-                position: relative;
-                border: 2px solid black;
-                border-radius: 30px;
-                width: 150px;
-                left: 198px;
-                top: 78px;
-                height: 45px;
-            }
-
-            main>section:nth-child(1)>div>p {
-                !*border: 1px solid red;*!
-                position: relative;
-                font-family: 'Open Sans', sans-serif;
-                font-family: 'Pacifico', cursive;
-                font-family: 'Roboto', sans-serif;    font-style: unset;
-                bottom: 2px;
-                text-align: center;
-            }
-        }
-        */
-
-        @media all and (min-width: 50px) and (max-width: 375px){
-
         }
 
         @media all and (min-width: 375px) and (max-width: 425px){
