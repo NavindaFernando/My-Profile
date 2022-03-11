@@ -21,6 +21,9 @@
     <style>
 
         /*start header*/
+        #menuIcon{
+            display: none;
+        }
 
         header {
             /*border: 1px solid red;*/
@@ -58,18 +61,12 @@
             cursor: pointer;
             font-weight: bold;
         }
-
-        /*header>i:nth-child(3){
-            display: none;
-        }
-
-        header>i:nth-child(4){
-         display: none;
-        }*/
-
         /*end header*/
 
         /*start section 01*/
+        #pFive{
+            display: none;
+        }
 
         main>section:nth-child(1){
             /*border: 1px solid black;*/
@@ -109,7 +106,7 @@
             font-size: 16px;
         }
 
-        main>section:nth-child(1)>img:nth-child(5){
+        #bgImg{
             /*border: 1px solid red;*/
             position: absolute;
             width: 532px;
@@ -166,6 +163,13 @@
             top: 58px;
         }
 
+        main>section:nth-child(1)>i:nth-child(13){
+            position: relative;
+            font-size: 15px;
+            left: 271px;
+            top: 58px;
+        }
+
         main>section:nth-child(1)>div{
             position: relative;
             border: 2px solid black;
@@ -185,171 +189,12 @@
             bottom: 2px;
             text-align: center;
         }
-
         /*end section 01*/
 
-        /*start media queries*/
-
-        /*mobile*/
-        @media all and (max-width: 320px){
-
-            header {
-                /*position: relative;*/
-                height:50px;
-                width: 100vw;
-                background-color: black;
-            }
-
-            header>img{
-                display: none;
-            }
-
-            header>ul{
-                display: none;
-            }
-
-            header>ul>li{
-                display: none;
-            }
-
-            header>i:nth-child(3){
-                position: relative;
-                font-size: 22px;
-                left: 17px;
-                color: white;
-                top: 10px;
-            }
-
-            header>i:nth-child(4){
-                position: relative;
-                font-size: 18px;
-                right: 6px;
-                color: white;
-                top: 17px;
-            }
-
-            header>i:nth-child(5){
-                position: relative;
-                display: flex;
-                font-size: 16px;
-                left: 88%;
-                top: 2px;
-                color: white;
-                transform: translateY(-50%);
-            }
-
-          }
-
-        @media all and (min-width: 320px) and (max-width: 375px){
-            header {
-                /*position: relative;*/
-                height:50px;
-                width: 100vw;
-                background-color: black;
-            }
-
-            header>img{
-                display: none;
-            }
-
-            header>ul{
-                display: none;
-            }
-
-            header>ul>li{
-                display: none;
-            }
-
-            header>i:nth-child(3){
-                position: relative;
-                font-size: 22px;
-                left: 17px;
-                color: white;
-                top: 10px;
-            }
-
-            header>i:nth-child(4){
-                position: relative;
-                font-size: 18px;
-                right: 6px;
-                color: white;
-                top: 17px;
-            }
-
-            header>i:nth-child(5){
-                position: relative;
-                display: flex;
-                font-size: 16px;
-                left: 80%;
-                top: 2px;
-                color: white;
-                transform: translateY(-50%);
-            }
+        /*start section 02*/
+        #pTwelve, #pSE, #pBig{
+            display: none;
         }
-
-        @media all and (min-width: 375px) and (max-width: 425px){
-            header {
-                /*position: relative;*/
-                height:50px;
-                width: 100vw;
-                background-color: black;
-            }
-
-            header>img{
-                display: none;
-            }
-
-            header>ul{
-                display: none;
-            }
-
-            header>ul>li{
-                display: none;
-            }
-
-            header>i:nth-child(3){
-                position: relative;
-                font-size: 22px;
-                left: 17px;
-                color: white;
-                top: 10px;
-            }
-
-            header>i:nth-child(4){
-                position: relative;
-                font-size: 18px;
-                right: 6px;
-                color: white;
-                top: 17px;
-            }
-
-            header>i:nth-child(5){
-                position: relative;
-                display: flex;
-                font-size: 16px;
-                left: 70%;
-                top: 2px;
-                color: white;
-                transform: translateY(-50%);
-            }
-        }
-
-        /*tablet*/
-        @media all and (min-width: 425px) and (max-width: 768px){
-
-        }
-
-        /*laptop (M)*/
-        @media all and (min-width: 768px) and (max-width: 1024px){
-
-        }
-
-        /*laptop (L)*/
-        @media all and (min-width: 1024px) and (max-width: 1440px){
-
-        }
-
-        /*end media queries*/
 
         main>section:nth-child(2){
             /*border: 1px solid red;*/
@@ -408,7 +253,7 @@
             width: 500px;
         }
 
-        /*        main>section:nth-child(2)>i{
+        /*  main>section:nth-child(2)>i{
             !*border: 1px solid red;*!
             position: relative;
             color: #BDB8BA;
@@ -2020,14 +1865,168 @@
 
         }
 
+        /*start media queries*/
+        /*mobile*/
+        /*@media all and (max-width: 320px){
+
+            header {
+                !*position: relative;*!
+                height:50px;
+                width: 100vw;
+                background-color: black;
+            }
+
+            header>img{
+                display: none;
+            }
+
+            header>ul{
+                display: none;
+            }
+
+            header>ul>li{
+                display: none;
+            }
+
+            header>i:nth-child(3){
+                position: relative;
+                font-size: 22px;
+                left: 17px;
+                color: #a2a2a2;;
+                top: 10px;
+            }
+
+            header>i:nth-child(4){
+                position: relative;
+                font-size: 22px;
+                right: 6px;
+                color: #a2a2a2;;
+                top: 18px;
+            }
+
+            main>section:nth-child(1){
+                !*border: 1px solid red;*!
+                height: 736px;
+                background-color: black;
+                width: 100vw;
+            }
+
+            main>section:nth-child(1)>p{
+                !*border: 1px solid deeppink;*!
+                position: relative;
+                font-family: 'Open Sans', sans-serif;
+                left: 200px;
+                width: 600px;
+            }
+
+            main>section:nth-child(1)>p:nth-child(1){
+                display: none;
+            }
+
+            main>section:nth-child(1)>p:nth-child(2){
+                display: none;
+            }
+
+            main>section:nth-child(1)>p:nth-child(3){
+                display: none;
+            }
+
+            main>section:nth-child(1)>p:nth-child(4){
+                display: none;
+            }
+
+            main>section:nth-child(1)>img:nth-child(5){
+                !* border: 1px solid red; *!
+                position: absolute;
+                width: 372px;
+                top: 10px;
+                left: -41px;
+                !* right: 852px; *!
+                opacity: 60%;
+            }
+
+            main>section:nth-child(1)>i:nth-child(6){
+                display: none;
+            }
+
+            main>section:nth-child(1)>i:nth-child(7){
+                display: none;
+            }
+
+            main>section:nth-child(1)>i:nth-child(8){
+                display: none;
+            }
+
+            main>section:nth-child(1)>i:nth-child(9){
+                display: none;
+            }
+
+            main>section:nth-child(1)>i:nth-child(10){
+                display: none;
+            }
+
+            main>section:nth-child(1)>i:nth-child(11){
+                display: none;
+            }
+
+            main>section:nth-child(1)>i:nth-child(12){
+                display: none;
+            }
+
+            main>section:nth-child(1)>div{
+                position: relative;
+                border: 2px solid black;
+                border-radius: 30px;
+                width: 150px;
+                left: 198px;
+                top: 78px;
+                height: 45px;
+            }
+
+            main>section:nth-child(1)>div>p {
+                !*border: 1px solid red;*!
+                position: relative;
+                font-family: 'Open Sans', sans-serif;
+                font-family: 'Pacifico', cursive;
+                font-family: 'Roboto', sans-serif;    font-style: unset;
+                bottom: 2px;
+                text-align: center;
+            }
+        }
+        */
+
+        @media all and (min-width: 50px) and (max-width: 375px){
+
+        }
+
+        @media all and (min-width: 375px) and (max-width: 425px){
+
+        }
+
+        /*tablet*/
+        @media all and (min-width: 425px) and (max-width: 768px){
+
+        }
+
+        /*laptop (M)*/
+        @media all and (min-width: 768px) and (max-width: 1024px){
+
+        }
+
+        /*laptop (L)*/
+        @media all and (min-width: 1024px) and (max-width: 1440px){
+
+        }
+        /*end media queries*/
+
     </style>
 </head>
 <body>
+        <!--head-->
+    <header id="head">
+        <img id="logo" src="assets/images/my%20logo.png" alt="">
 
-    <header>
-        <img src="assets/images/my%20logo.png" alt="">
-
-        <ul>
+        <ul id="navHeaders">
             <li>Home</li>
             <li>About</li>
             <li>Services</li>
@@ -2038,48 +2037,58 @@
             <li>Contact</li>
         </ul>
 
-        <i class="fas fa-minus"></i>
-        <i class="fas fa-minus"></i>
-        <i class="fas fa-search"></i>
+        <img id="menuIcon" src="assets/images/downIcon.png" alt="">
     </header>
 
     <main>
-        <section>
+        <!--sec 01-->
+        <section id="secOne">
 
-            <p>Hi</p>
-            <p>MY NAME IS NAVINDA</p>
-            <p>Software Engineer</p>
-            <p> Web / UI / UX  designer & developer from srilanka. <br> I create custom websites & software to help businessess <br> do better online.</p>
+            <p id="pOne">Hi</p>
+            <p id="pTwo">MY NAME IS NAVINDA</p>
+            <p id="pTree">Software Engineer</p>
+            <p id="pFour"> Web / UI / UX  designer & developer from srilanka. <br> I create custom websites & software to help businessess <br> do better online.</p>
+            <p id="pFive">Full stack <br> developer & <br> designer from <br> srilanka.</p>
 
-            <img src="assets/images/BW.png" alt="">
+            <img id="bgImg" src="assets/images/BW.png" alt="">
 
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-github"></i>
-            <i class="fas fa-envelope"></i>
-            <i class="fab fa-whatsapp"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-linkedin-in"></i>
+            <i id="iOne" class="fab fa-twitter"></i>
+            <i id="iTwo" class="fab fa-github"></i>
+            <i id="iTree" class="fas fa-envelope"></i>
+            <i id="iFour" class="fab fa-whatsapp"></i>
+            <i id="iFive" class="fab fa-instagram"></i>
+            <i id="iSix" class="fab fa-facebook-f"></i>
+            <i id="iSeven" class="fab fa-linkedin-in"></i>
 
-            <div>
-                <p>My Projects</p>
+            <div id="dSix">
+                <p id="pSix">My Projects</p>
             </div>
 
         </section>
 
-        <section>
+        <!--sec 02-->
+        <section id="secTwo">
 
-            <img src="assets/images/BW02.png" alt="">
+            <img id="bgImgTwo" src="assets/images/BW02.png" alt="">
 
-            <p>Hi, I am Navinda Fernando</p>
-            <p>a software engineer</p>
-            <p>I am from wennappuwa, Srilanka. A place of beauty and nature. <br> I love art and design. I always try to design
+            <p id="pSeven">Hi, I am Navinda Fernando</p>
+            <p id="pEight">a software engineer</p>
+            <p id="pNine">I am from wennappuwa, Srilanka. A place of beauty and nature. <br> I love art and design. I always try to design
                 stuff <br> with my unique point of view. <br></p>
-            <p>I am a senior programmer with good knowledge of development & web design. <br> I'm an experienced software engineer
+            <p id="pTen">I am a senior programmer with good knowledge of development & web design. <br> I'm an experienced software engineer
                 who constantly seeks out <br> innovative solutions to everyday problems.</p>
-            <p> I study about java, python, javascript, c++, c, html, css and my main <br> language is java. I like to create and
+            <p id="pEleven"> I study about java, python, javascript, c++, c, html, css and my main <br> language is java. I like to create and
                 contribute to  open source projects. <br> That helps me to learn a ton of new stuff, grow as a developer and
                 <br> support other open source projects.</p>
+
+            <p id="pTwelve">Hi, I am Navinda <br> Fernando</p>
+            <p id="pSE">a software engineer</p>
+            <p id="pBig">I am a senior programmer with good  knowledge of development & web design.
+               I'm an experienced software engineer who constantly seeks out innovative solutions
+               to everyday problems. <br> <br>
+               I study about java, kotlin, python, c++, swift, javascript, html, & css. my main language is java.
+               I like to create and contribute to  open source projects. That helps me to learn a ton of
+               new stuff, grow as a developer and support other open source projects. </p>
 
             <!--<i class="fab fa-java"></i>
             <i class="fab fa-python"></i>
@@ -2093,58 +2102,56 @@
             <i class="fas fa-plus"></i>
             <i class="fas fa-plus"></i>-->
 
-            <div>
-                <p>Download CV</p>
+            <div id="dThirteen">
+                <p id="pThirteen">Download CV</p>
             </div>
 
         </section>
 
-        <section>
+        <!--sec 03-->
+        <section id="secTree">
 
-                <p>S E R V I C E S</p>
+                <p id="pServices">S E R V I C E S</p>
 
+                <img id="sOne" src="assets/images/shape.png" alt="">
+                <i id="iWDev" class="fas fa-globe"></i>
+                <p id="pWDev">Web Dev</p>
+                <p id="pWDevSub">I have done a lot of web <br> development projects, <br> you have the ability to <br> see them</p>
 
-                <img src="assets/images/shape.png" alt="">
-                <i class="fas fa-globe"></i>
-                <p>Web Dev</p>
-                <p>I have done a lot of web <br> development projects, <br> you have the ability to <br> see them</p>
+                <img id="sTree" src="assets/images/shape.png" alt="">
+                <i id="iWDesign" class="fab fa-sketch"></i>
+                <p id="pWDesign">Web Design</p>
+                <p id="pWDesignSub">I have done a lot <br> of web designs, you <br> have the ability to <br> see them</p>
 
+                <img id="sTwo" src="assets/images/shape.png" alt="">
+                <i id="iStandalone" class="fas fa-cog"></i>
+                <p id="pStandalone">Standalone Dev</p>
+                <p id="pStandaloneSub">I have done a lot of <br> standalone applications, <br> you have the ability to <br> see them</p>
 
-                <img src="assets/images/shape.png" alt="">
-                <i class="fas fa-cog"></i>
-                <p>Standalone Dev</p>
-                <p>I have done a lot of <br> standalone applications, <br> you have the ability to <br> see them</p>
-
-
-                <img src="assets/images/shape.png" alt="">
-                <i class="fab fa-sketch"></i>
-                <p>Web Design</p>
-                <p>I have done a lot <br> of web designs, you <br> have the ability to <br> see them</p>
-
-
-                <img src="assets/images/shape.png" alt="">
-                <i class="fas fa-drafting-compass"></i>
-                <p>UI / UX Design</p>
-                <p>I have done a lot <br> of ui/ux designs, you <br> have the ability to <br> see them</p>
+                <img id="sFour" src="assets/images/shape.png" alt="">
+                <i id="iUiUx" class="fas fa-drafting-compass"></i>
+                <p id="pUiUx">UI / UX Design</p>
+                <p id="pUiUxSub">I have done a lot <br> of ui/ux designs, you <br> have the ability to <br> see them</p>
 
 
-                <img src="assets/images/shape.png" alt="">
-                <i class="fab fa-android"></i>
-                <p>Mobile App Dev</p>
-                <p>I have done a lot of <br> mobile applications, you <br> have the ability to see <br> them</p>
+                <img id="sFive" src="assets/images/shape.png" alt="">
+                <i id="iMobile" class="fab fa-android"></i>
+                <p id="pMobile">Mobile App Dev</p>
+                <p id="pMobileSub">I have done a lot of <br> mobile applications, you <br> have the ability to see <br> them</p>
 
 
-                <img src="assets/images/shape.png" alt="">
-                <i class="fas fa-lightbulb"></i>
-                <p>Innovative Ideas</p>
-                <p>You can get new <br> ideas for your application <br> to build it more <br> creatively</p>
+                <img id="sSix" src="assets/images/shape.png" alt="">
+                <i id="iInnovative" class="fas fa-lightbulb"></i>
+                <p id="pInnovative">Innovative Ideas</p>
+                <p id="pInnovativeSub">You can get new <br> ideas for your application <br> to build it more <br> creatively</p>
 
 
-                <p>I am committed to giving you my service to the fullest!</p>
+                <p id="otherPara">I am committed to giving you my service <br> to the fullest!</p>
 
         </section>
 
-        <section>
+        <!--sec 04-->
+        <section id="secFour">
 
             <p>P R O J E C T S</p>
 
@@ -2181,6 +2188,7 @@
 
         </section>
 
+        <!--sec 05-->
         <section>
 
             <img src="assets/images/BW03.png" alt="">
@@ -2223,6 +2231,7 @@
 
         </section>
 
+        <!--sec 06-->
         <section>
 
             <img src="assets/images/skill%20img.png" alt="">
@@ -2264,6 +2273,7 @@
 
         </section>
 
+        <!--sec 07-->
         <section>
 
             <p>Feedback</p>
@@ -2306,6 +2316,7 @@
 
         </section>
 
+        <!--sec 08-->
         <section>
 
             <p>get in touch</p>
