@@ -15,7 +15,7 @@ mockup : https://www.figma.com/file/3Q0xhTazPepWub1jOExIa9/Untitled?node-id=0%3A
 </h6>
 
 <h6 align="center">
-Destop UI
+Desktop UI
 </h6>
 
 ![my profile destop](https://user-images.githubusercontent.com/86073690/150965808-4595b1ec-b3ab-4895-b323-fc4d5544ccfe.jpg)
@@ -27,3 +27,22 @@ Mobile UI
 </h6>
 
 ![my profile mobile](https://user-images.githubusercontent.com/86073690/150967528-754b37cd-59cd-4935-b06f-b69c27321515.jpg)
+
+***
+
+<h6 align="center">
+dev environment
+</h6>
+
+<div align="center">
+  <img height="20" src = "https://img.shields.io/badge/Intellij idea-white.svg?">
+</div>
+
+<h6 align="center">
+design environments
+</h6>
+
+<div align="center">
+  <img height="20" src = "https://img.shields.io/badge/Adobe Photoshop-white.svg?">
+  <img height="20" src = "https://img.shields.io/badge/Figma-white.svg?">
+</div>
