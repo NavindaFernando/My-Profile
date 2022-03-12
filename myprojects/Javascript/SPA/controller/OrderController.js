@@ -2,6 +2,10 @@ function cmbCustomers(value) {
     $("#cmbCustomer").append(value);
 }
 
+function cmbItem(values) {
+    $("#cmbItems").append(values);
+}
+
 $('#btnAddToCart').click(function(){
     confirm("Do you want to add to cart");
     /*alert("event trigger")*/

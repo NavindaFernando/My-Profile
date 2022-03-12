@@ -51,6 +51,10 @@ function saveItem(){
 
     // push to db
     itemDB.push(itemObject);
+
+    let itemCodes = $("#txtItemCode").val();
+
+    cmbItem("<option>"+itemCodes+"</option>");
 }
 
 function loadAllItems(){

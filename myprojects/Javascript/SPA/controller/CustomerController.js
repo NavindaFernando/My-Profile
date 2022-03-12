@@ -7,30 +7,6 @@ $("#btnSave").click(function () {
     deleteCustomer();
     rowSelector();
 
-    /*Update a Customer*/
-/*    $("#btnUpdate").click(function () {
-        if ($("#txtCusName").val().length !== 0) {
-            let cid = $("#txtSearchCustomer").val();
-            let name = $("#txtCustomerName").val();
-            let address = $("#txtCustomerAddress").val();
-            let salary = $("#txtCustomerContact").val();
-
-            for (let i = 0; i < customerDB.length; i++) {
-                if (customerDB[i].getCustomerId() === cid ) {
-                    customerDB[i].setCustomerName(name);
-                    customerDB[i].setCustomerAddress(address);
-                    customerDB[i].setCustomerSalary(salary);
-                }
-            }
-            loadAllCustomer();
-            alert("Customer was updated!");
-            setCustomerDetailsValue("", "", "");
-            $("#txtSeachCusId").val("");
-        } else {
-            alert("Select a Customer to Update!");
-        }
-    });*/
-
 });
 
 // clear text field
@@ -127,30 +103,6 @@ function deleteCustomer() {
         customerDB.pop();
     });
 }
-
-/*/!*Update a Customer*!/
-$("#btnUpdate").click(function () {
-    if ($("#txtCustomerName").val().length !== 0) {
-        let cid = $("#txtCusId").val();
-        let name = $("#txtCusName").val();
-        let address = $("#txtCusAddress").val();
-        let salary = $("#txtCusSalary").val();
-
-        for (let i = 0; i < customerDB.length; i++) {
-            if (customerDB[i].getCustomerId() === cid ) {
-                customerDB[i].setCustomerName(name);
-                customerDB[i].setCustomerAddress(address);
-                customerDB[i].setCustomerSalary(salary);
-            }
-        }
-        getAllCustomers();
-        alert("Customer was updated!");
-        setCustomerDetailsValue("", "", "");
-        $("#txtSearchCustomer").val("");
-    } else {
-        alert("Select a Customer to Update!");
-    }
-});*/
 // crud end
 
 // clear text
