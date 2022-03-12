@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-09</title>
+    <link rel="stylesheet" href="../Case-01/assets/css%20normalize/normalize.css">
+    <link rel="stylesheet" href="../Case-02/assets/fonts/css/all.css">
+
+    <style>
+        body>main{
+            position: absolute;
+            /*border: 1px solid red;*/
+            width: 500px;
+            height: 500px;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        main>section{
+            position: relative;
+            /*border: 1px solid black;*/
+            width: 2000px;
+            height: 100%;
+            display: flex;
+            animation-name:change;
+            animation-duration: 15s;
+        }
+
+        main>section>div{
+            /*border: 1px solid green;*/
+            width: 100%;
+        }
+
+        section>div:nth-child(1){
+            background: url("assets/images/plant one.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section>div:nth-child(2){
+            background: url("assets/images/plant two.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section>div:nth-child(3){
+            background: url("assets/images/plant three.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section>div:nth-child(4){
+            background: url("assets/images/plant four.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes change {
+            0%{
+                left: 0;
+            }
+            25%{
+                left: -100%;
+            }
+            50%{
+                left: -200%;
+            }
+            75%{
+                left: -300%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+</body>
+</html>

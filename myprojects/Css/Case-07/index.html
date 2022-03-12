@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-07</title>
+    <link rel="stylesheet" href="../Case-01/assets/css%20normalize/normalize.css">
+    <link rel="stylesheet" href="../Case-02/assets/fonts/css/all.css">
+
+    <style>
+        main{
+            position: relative;
+            background-color: #FEF6F1;
+            height: 100vh;
+        }
+
+        section{
+            position: relative;
+            width: 280px;
+            height: 220px;
+            margin-left: 20px;
+            background: url("assets/images/harry_potter.gif");
+            background-size: cover;
+            background-position: center;
+
+            animation-name: gogo;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+
+        @keyframes gogo {
+            0%,20%{
+                left: 0;
+                top: 0;
+                transform: rotate(0deg);
+            }
+
+            25%{
+                left: 600px;
+                top: 0;
+                transform: rotate(90deg);
+            }
+
+            50%{
+                left: 900px;
+                top: 200px;
+                transform: rotate(180deg);
+            }
+
+            75%{
+                left: 0px;
+                top: 412px;
+                transform: rotate(270deg);
+            }
+
+            100%{
+                left: 0;
+                top: 0;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <section></section>
+</main>
+
+</body>
+</html>

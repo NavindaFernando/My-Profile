@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Case-06</title>
+    <link rel="stylesheet" href="../Case-01/assets/css%20normalize/normalize.css">
+    <link rel="stylesheet" href="../Case-02/assets/fonts/css/all.css">
+
+    <style>
+        section {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            /*background-color: lightpink;*/
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        section > h3 {
+            position: absolute;
+            color: #979393;
+            font-size: 30px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: max-content;
+            height: max-content;
+            z-index: 3;
+            font-family: 'Mochiy Pop P One', sans-serif;
+        }
+
+        section::after {
+            position: absolute;
+            content: " ";
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border: 20px solid #f3f3f3;
+            border-radius: 100%;
+            border-top: 20px solid #b3afaf;
+        }
+
+        section:hover::after{
+            transform: rotate(360deg);
+            transition: all 2s;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<section>
+    <h3>RWAD</h3>
+</section>
+
+</body>
+</html>
