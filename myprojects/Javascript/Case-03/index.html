@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js Queue 02</title>
+    <style>
+        #divOne{
+            width: 50px;
+            height: 40px;
+            position: absolute;
+            right: 45%;
+            border-radius: 15px 15px 15px 15px;
+            top: 63%;
+            left: 0;
+            margin: auto;
+            background-color: #BEBAF3;
+            box-shadow: 2px 2px 70px 10px #BEBAF3;
+        }
+
+        #divTwo{
+            width: 50px;
+            height: 40px;
+            position: absolute;
+            right: 77%;
+            border-radius: 15px 15px 15px 15px;
+            top: 63%;
+            left: 0%;
+            margin: auto;
+            background-color: #BEBAF3;
+            box-shadow: 2px 2px 70px 10px #BEBAF3;
+        }
+
+        #divThree{
+            width: 50px;
+            height: 40px;
+            position: absolute;
+            right: 14%;
+            border-radius: 15px 15px 15px 15px;
+            top: 63%;
+            left: 0%;
+            margin: auto;
+            background-color: #BEBAF3;
+            box-shadow: 2px 2px 70px 10px #BEBAF3;
+        }
+
+        #three{
+            position: absolute;
+            color: #0a53be;
+            text-align: center;
+            right: 231px;
+            top: 3px;
+            font-size: 30px;
+            font-weight: bold;
+            z-index: 1;
+        }
+
+        #two{
+            position: absolute;
+            color: #0a53be;
+            text-align: center;
+            left: 230px;
+            top: 3px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        #one{
+            position: absolute;
+            color: #0a53be;
+            text-align: center;
+            left: 14px;
+            top: 3px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+<img src="assets/images/animation_640_l0f3g5wb.gif" style="width: 50%; height: 100%; position:absolute; left: 50%; top: 30%;" alt="">
+<img src="assets/images/running-cycle.gif" style="width: 15%; height: 30%; position:absolute; top: 71%; left: 35% " alt="">
+<img src="assets/images/running-cycle.gif" style="width: 15%; height: 30%; position:absolute; top: 71%; left: 19% " alt="">
+<img src="assets/images/running-cycle.gif" style="width: 15%; height: 30%; position:absolute; top: 71%; left: 3% " alt="">
+<img src="assets/images/10115-birds.gif" style="width: 40%; height: 40% " alt="">
+<img src="assets/images/10115-birds.gif" style="width: 40%;" alt="">
+<img src="assets/images/10115-birds.gif" style="width: 19%; position: absolute; bottom: 500px" alt="">
+<img src="assets/images/8368-cloud.gif" style="width: 15%; position:absolute; top: 0px; right: 57%" alt="">
+<img src="assets/images/8368-cloud.gif" style="width: 13%; position:absolute; top: 130px; right: 87%" alt="">
+<img src="assets/images/8368-cloud.gif" style="width: 13%; position:absolute; top: 130px; right: 47%" alt="">
+<img src="assets/images/8368-cloud.gif" style="width: 10%; position:absolute; top: 0px; right: 45%" alt="">
+<img src="assets/images/8368-cloud.gif" style="width: 10%; position:absolute; top: 100px; right: 5%" alt="">
+<img src="assets/images/42369-weather-wind.gif" style="width: 10%; position:absolute; top: 350px; right: 40%" alt="">
+
+<div id="divOne"><label id="three"></label></div>
+<div id="divTwo"><label id="two"></label></div>
+<div id="divThree"><label id="one"></label></div>
+
+<script src="../Case-01/assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+    const car = ["A", "B", "C"];
+
+    setInterval(ride, 500)
+
+    function ride() {
+        var i = 0;
+        var top = car[i];
+
+        while (i < car.length) {
+
+            if (i == 2) {
+                car[i] = top;
+
+            } else {
+                car[i] = car[i + 1];
+            }
+            i++;
+        }
+        var count = 0;
+        $('#one').text(car[count++]);  //0
+        $('#two').text(car[count++]);  //1
+        $('#three').text(car[count++]); //2
+    }
+</script>
+</body>
+</html>

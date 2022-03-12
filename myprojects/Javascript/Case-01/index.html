@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitt Animation</title>
+    <link rel="stylesheet" href="assets/normalize/normalize.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <style>
+
+        #leftSignalLight{
+            width: 24px;
+            height: 24px;
+            border-radius: 100%;
+            position: absolute;
+            right: 40%;
+            bottom: 9%;
+            top: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        #rightSignalLight{
+            width: 24px;
+            height: 24px;
+            border-radius: 100%;
+            position: absolute;
+            right: 0;
+            bottom: 9%;
+            top: 0;
+            left: 40%;
+            margin: auto;
+        }
+
+        #car{
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        body>main>div:nth-child(4) {
+            position: absolute;
+            width: 25%;
+            height: 2%;
+            top: 65%;
+            left: 0;
+            right: 0%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            row-span: revert;
+        }
+
+        #firstDiv{
+            background-color: #f9fafb;
+            box-shadow: 2px 2px 70px 5px #f9fafb;
+        }
+
+        #secondDiv{
+            background-color: #f9fafb;
+            box-shadow: 2px 2px 70px 5px #f9fafb;
+        }
+
+        #thirdDiv{
+            background-color: #f9fafb;
+            box-shadow: 2px 2px 70px 5px #f9fafb;
+        }
+
+        #fourthDiv{
+            background-color: #f9fafb;
+            box-shadow: 2px 2px 70px 5px #f9fafb;
+        }
+
+        #fifthDiv{
+            background-color: #f9fafb;
+            box-shadow: 2px 2px 70px 5px #f9fafb;
+        }
+
+        body>main>div:nth-child(4) div {
+            position: relative;
+            width: calc(100%/5);
+            /*border: 1px solid white;*/
+            /*margin-left: 2%;*/
+        }
+
+        #btnOne{
+            position: absolute;
+            top: 50%;
+            right: 90%;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #btnTwo{
+            position: absolute;
+            top: 50%;
+            left: 90%;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #btnTop{
+            position: absolute;
+            top: 50%;
+            right: 85%;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #btnBottom{
+            position: absolute;
+            top: 50%;
+            left: 85%;
+            bottom: 0;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <img id="car" src="assets/image/tesla%20car.png" alt="">
+    <div id="rightSignalLight"></div>
+    <div id="leftSignalLight"></div>
+    <div class=".container">
+        <div id="firstDiv"></div>
+        <div id="secondDiv"></div>
+        <div id="thirdDiv"></div>
+        <div id="fourthDiv"></div>
+        <div id="fifthDiv"></div>
+    </div>
+
+    <div id="btnOne">
+        <button id="lightOff" type="button" class="btn btn-outline-secondary">Light Off</button>
+    </div>
+    <div id="btnTwo">
+        <button id="lightOn" type="button" class="btn btn-outline-secondary">Light On</button>
+    </div>
+    <div id="btnTop">
+        <button id="stop" type="button" class="btn btn-outline-secondary">Stop</button>
+    </div>
+    <div id="btnBottom">
+        <button id="start" type="button" class="btn btn-outline-secondary">Start</button>
+    </div>
+
+</main>
+
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+    var tId;
+    var divOne = $("#firstDiv");
+    var divTwo = $("#secondDiv");
+    var divThree = $("#thirdDiv");
+    var divFour = $("#fourthDiv");
+    var divFive = $("#fifthDiv");
+
+    tId = setInterval(setStart,115);
+
+    function col1(div){
+        div.css('box-shadow: ',"#6D6D6D");
+    }
+    function col2(div){
+        div.css('backgroundColor',"#B6B6B6");
+    }
+    function col3(div){
+        div.css('backgroundColor','#DADADA')
+    }
+
+    var movement = 0;
+    function setStart(){
+        if(movement == 0){
+            divOne.css('opacity','100%')
+            divTwo.css('opacity','100%')
+            divThree.css('opacity','50%')
+            divFour.css('opacity','50%')
+            divFive.css('opacity','50%')
+            col2(divTwo);
+            col3(divOne);
+            movement++;
+        }else if(movement == 1){
+            divOne.css('opacity','100%')
+            divTwo.css('opacity','100%')
+            divThree.css('opacity','100%')
+            divFour.css('opacity','50%')
+            divFive.css('opacity','50%')
+            col1(divOne);
+            col2(divTwo);
+            col3(divThree);
+            movement++;
+        }else if(movement == 2){
+            divOne.css('opacity','50%')
+            divTwo.css('opacity','100%')
+            divThree.css('opacity','100%')
+            divFour.css('opacity','100%')
+            divFive.css('opacity','50%')
+            col1(divTwo);
+            col2(divThree);
+            col3(divFour);
+            movement++;
+        }
+        else if(movement == 3){
+            divOne.css('opacity','50%')
+            divTwo.css('opacity','50%')
+            divThree.css('opacity','100%')
+            divFour.css('opacity','100%')
+            divFive.css('opacity','100%')
+            col1(divThree);
+            col2(divFour);
+            col3(divFive);
+            movement++;
+        }
+        else if(movement == 4){
+            divOne.css('opacity','50%')
+            divTwo.css('opacity','50%')
+            divThree.css('opacity','50%')
+            divFour.css('opacity','100%')
+            divFive.css('opacity','100%')
+            col1(divFour);
+            col2(divFive);
+            movement++;
+        }
+        else if(movement == 5){
+            divOne.css('opacity','50%')
+            divTwo.css('opacity','50%')
+            divThree.css('opacity','100%')
+            divFour.css('opacity','100%')
+            divFive.css('opacity','100%')
+            col1(divFive);
+            col2(divFour);
+            col3(divThree);
+            movement++;
+        }
+        else if(movement == 6){
+            divOne.css('opacity','50%')
+            divTwo.css('opacity','100%')
+            divThree.css('opacity','100%')
+            divFour.css('opacity','100%')
+            divFive.css('opacity','50%')
+            col1(divFour);
+            col2(divThree);
+            col3(divTwo);
+            movement++;
+        }
+        else if(movement == 7){
+            divOne.css('opacity','100%')
+            divTwo.css('opacity','100%')
+            divThree.css('opacity','100%')
+            divFour.css('opacity','50%')
+            divFive.css('opacity','50%')
+            col1(divThree);
+            col2(divTwo);
+            col3(divOne);
+            movement=0;
+        }
+    };
+
+    $("#lightOn").click(function () {
+        $("#leftSignalLight").css('background-color','#f9fafb');
+        $("#leftSignalLight").css('box-shadow','2px 2px 52px 45px #f9fafb');
+        $("#rightSignalLight").css('background-color','#f9fafb');
+        $("#rightSignalLight").css('box-shadow','2px 2px 52px 45px #f9fafb');
+    });
+
+    $("#lightOff").click(function () {
+        $("#leftSignalLight").css('background-color','');
+        $("#leftSignalLight").css('box-shadow','');
+        $("#rightSignalLight").css('background-color','');
+        $("#rightSignalLight").css('box-shadow','');
+    });
+
+    $("#start").click(function () {
+        movement = 0;
+    });
+
+    $("#stop").click(function () {
+        movement = 8;
+    });
+
+</script>
+</body>
+</html>

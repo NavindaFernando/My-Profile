@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js Queue 01</title>
+    <link rel="stylesheet" href="../Case-01/assets/normalize/normalize.css">
+    <link rel="stylesheet" href="../Case-01/assets/bootstrap/css/bootstrap.min.css">
+    <style>
+
+    body>main>#firstDiv {
+        width: 159px;
+        height: 10%;
+        position: absolute;
+        border: 1px solid #262626;
+        right: 63%;
+        top: 34%;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    body>main>#sixthDiv {
+        width: 159px;
+        height: 10%;
+        position: absolute;
+        border: 1px solid #262626;
+        left: 35%;
+        right: 0;
+        top: 56%;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    body>main>.container {
+        position: absolute;
+        width: 50%;
+        height: 10%;
+        top: 45%;
+        left: -2%;
+        right: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    body>main>.container>div {
+        position: relative;
+        width: calc(100%/4);
+        margin-left: 1%;
+        border-radius: 20px;
+        border: 1px solid #262626;
+    }
+
+    .divStart{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 80%;
+        margin: auto;
+        width: max-content;
+        height: max-content;
+    }
+
+    .divStop{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 80%;
+        left: 0;
+        margin: auto;
+        width: max-content;
+        height: max-content;
+    }
+
+    </style>
+</head>
+<body>
+
+<main style="background-color: #000000;position: relative;width: 100%;height: 100vh;">
+    <div id="firstDiv"></div>
+    <div class="container">
+        <div id="secondDiv"></div>
+        <div id="thirdDiv"></div>
+        <div id="fourthDiv"></div>
+        <div id="fifthDiv"></div>
+    </div>
+    <div id="sixthDiv"></div>
+
+        <div class="divStart">
+            <button type="button" class="btn btn-outline-secondary" id="clickStart" >Start</button>
+        </div>
+        <div class="divStop">
+            <button type="button" class="btn btn-outline-secondary" id="clickStop">Stop</button>
+        </div>
+
+</main>
+
+<script src="../Case-01/assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+
+    var timerId;
+    var divOne = $('#firstDiv');
+    var divTwo = $('#secondDiv');
+    var divThree = $('#thirdDiv');
+    var divFour = $('#fourthDiv');
+    var divFive = $('#fifthDiv');
+    var divSix = $('#sixthDiv');
+    var start = $('#clickStart');
+    var stop = $('#clickStop');
+    var arr = [divOne, divTwo, divThree, divFour, divFive, divSix];
+
+    start.click(function () {
+        clearInterval(timerId);
+        timerId = setInterval(setColors,950);
+
+     stop.click(function () {
+            clearInterval(timerId);
+        })
+    });
+
+    var i = 0;
+    function setColors() {
+        if (i == 0) {
+            arr[0].css("backgroundColor", "#ff0000");
+            arr[0].css("box-shadow", "2px 2px 70px 5px #ff0000");
+
+            arr[1].css("backgroundColor", "#05c8e2");
+            arr[1].css("box-shadow", "2px 2px 70px 5px #05c8e2");
+
+            arr[2].css("backgroundColor", "#07ff00");
+            arr[2].css("box-shadow", "2px 2px 70px 5px #07ff00");
+
+            arr[3].css("backgroundColor", "#eeff00");
+            arr[3].css("box-shadow", "2px 2px 70px 5px #eeff00");
+
+            arr[4].css("backgroundColor", "#000cff");
+            arr[4].css("box-shadow", "2px 2px 70px 5px #000cff");
+
+            arr[5].css("backgroundColor", "#ff2792");
+            arr[5].css("box-shadow", "2px 2px 70px 5px #ff2792");
+
+            i++;
+            return;
+        }
+
+        else if (i == 1) {
+            arr[0].css("backgroundColor", "#ff2792");
+            arr[0].css("box-shadow", "2px 2px 70px 5px #ff2792");
+
+            arr[1].css("backgroundColor", "#ff0000");
+            arr[1].css("box-shadow", "2px 2px 70px 5px #ff0000");
+
+            arr[2].css("backgroundColor", "#05c8e2");
+            arr[2].css("box-shadow", "2px 2px 70px 5px #05c8e2");
+
+            arr[3].css("backgroundColor", "#07ff00");
+            arr[3].css("box-shadow", "2px 2px 70px 5px #07ff00");
+
+            arr[4].css("backgroundColor", "#eeff00");
+            arr[4].css("box-shadow", "2px 2px 70px 5px #eeff00");
+
+            arr[5].css("backgroundColor", "#000cff");
+            arr[5].css("box-shadow", "2px 2px 70px 5px #000cff");
+
+            i++;
+            return;
+        }
+
+        else if (i == 2) {
+            arr[0].css("backgroundColor", "#000cff");
+            arr[0].css("box-shadow", "2px 2px 70px 5px #000cff");
+
+            arr[1].css("backgroundColor", "#ff2792");
+            arr[1].css("box-shadow", "2px 2px 70px 5px #ff2792");
+
+            arr[2].css("backgroundColor", "#ff0000");
+            arr[2].css("box-shadow", "2px 2px 70px 5px #ff0000");
+
+            arr[3].css("backgroundColor", "#05c8e2");
+            arr[3].css("box-shadow", "2px 2px 70px 5px #05c8e2");
+
+            arr[4].css("backgroundColor", "#07ff00");
+            arr[4].css("box-shadow", "2px 2px 70px 5px #07ff00");
+
+            arr[5].css("backgroundColor", "#eeff00");
+            arr[5].css("box-shadow", "2px 2px 70px 5px #eeff00");
+
+            i++;
+            return;
+        }
+
+        else if (i == 3) {
+            arr[0].css("backgroundColor", "#eeff00");
+            arr[0].css("box-shadow", "2px 2px 70px 5px #eeff00");
+
+            arr[1].css("backgroundColor", "#000cff");
+            arr[1].css("box-shadow", "2px 2px 70px 5px #000cff");
+
+            arr[2].css("backgroundColor", "#ff2792");
+            arr[2].css("box-shadow", "2px 2px 70px 5px #ff2792");
+
+            arr[3].css("backgroundColor", "#ff0000");
+            arr[3].css("box-shadow", "2px 2px 70px 5px #ff0000");
+
+            arr[4].css("backgroundColor", "#05c8e2");
+            arr[4].css("box-shadow", "2px 2px 70px 5px #05c8e2");
+
+            arr[5].css("backgroundColor", "#07ff00");
+            arr[5].css("box-shadow", "2px 2px 70px 5px #07ff00");
+
+            i++;
+            return;
+        }
+
+        else if (i == 4) {
+            arr[0].css("backgroundColor", "#07ff00");
+            arr[0].css("box-shadow", "2px 2px 70px 5px #07ff00");
+
+            arr[1].css("backgroundColor", "#eeff00");
+            arr[1].css("box-shadow", "2px 2px 70px 5px #eeff00");
+
+            arr[2].css("backgroundColor", "#000cff");
+            arr[2].css("box-shadow", "2px 2px 70px 5px #000cff");
+
+            arr[3].css("backgroundColor", "#ff2792");
+            arr[3].css("box-shadow", "2px 2px 70px 5px #ff2792");
+
+            arr[4].css("backgroundColor", "#ff0000");
+            arr[4].css("box-shadow", "2px 2px 70px 5px #ff0000");
+
+            arr[5].css("backgroundColor", "#05c8e2");
+            arr[5].css("box-shadow", "2px 2px 70px 5px #05c8e2");
+
+            i++;
+            return;
+        }
+
+        else if (i == 5) {
+            arr[0].css("backgroundColor", "#05c8e2");
+            arr[0].css("box-shadow", "2px 2px 70px 5px #05c8e2");
+
+            arr[1].css("backgroundColor", "#07ff00");
+            arr[1].css("box-shadow", "2px 2px 70px 5px #07ff00");
+
+            arr[2].css("backgroundColor", "#eeff00");
+            arr[2].css("box-shadow", "2px 2px 70px 5px #eeff00");
+
+            arr[3].css("backgroundColor", "#000cff");
+            arr[3].css("box-shadow", "2px 2px 70px 5px #000cff");
+
+            arr[4].css("backgroundColor", "#ff2792");
+            arr[4].css("box-shadow", "2px 2px 70px 5px #ff2792");
+
+            arr[5].css("backgroundColor", "#ff0000");
+            arr[5].css("box-shadow", "2px 2px 70px 5px #ff0000");
+
+            i = 0;
+            return;
+        }
+    }
+</script>
+</body>
+</html>
