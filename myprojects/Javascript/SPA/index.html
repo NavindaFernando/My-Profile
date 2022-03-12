@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.css">
+    <link href="assets/styles/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!--navbar start-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-opacity-10">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../assets/images/pos_logo-.png" alt="" width="100" height="44">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a id="linkHome" class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a id="linkOrder" class="nav-link" href="#">Order</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Other
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a id="linkCustomer" class="dropdown-item" href="#">Customer Manage</a></li>
+                        <li><a id="linkItem" class="dropdown-item" href="#">Item Manage</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--navbar end-->
+
+<!--Dashboard start-->
+<section id="dashboardContent" class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-12 col-sm-12 col col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+
+            <div class="CardOne">
+                <i class="fas fa-users mt-5"></i>
+                <h1>All Customers</h1>
+                <h4>1022</h4>
+            </div>
+
+            <div class="CardTwo">
+                <i class="fas fa-users mt-5"></i>
+                <h1>All Items</h1>
+                <h4>3028</h4>
+            </div>
+
+            <div class="CardThree">
+                <i class="fas fa-users mt-5"></i>
+                <h1>Order Count</h1>
+                <h4>192</h4>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+            <img src="assets/images/falling-fresh-vegetables.png " style="max-width:96%;" alt="..." class="rounded float-end">
+        </div>
+    </div>
+</section>
+<!--Dashboard end-->
+
+<!--Customer manage start-->
+<section id="customerContent" class="container-fluid mt-3">
+    <section class="row mt-3 justify-content-around">
+
+        <div class="col-12 mt-5 col-sm-4 col-md-4 col-lg-4 col-xl-5 col-xxl-5">
+            <h2>Customer Manage</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="txtSeachCusId" class="form-label">Seach customer :</label>
+                    <input type="email" class="form-control" id="txtSeachCusId" aria-describedby="emailHelp">
+                    <div id="customerHelp" class="form-text">You have the ability to do the customers search you want.</div>
+                </div>
+                <button id="btnSearch" type="button" class="btn btn-outline-primary">Search</button>
+                <!--<button id="btnSearch" type="button" class="btn btn-primary">Search</button>-->
+                <button id="btnClear" type="button" class="btn btn-outline-danger">Clear</button>
+                <!--<button type="button" class="btn btn-danger">Delete</button>-->
+                <button id="btnUpdate" type="button" class="btn btn-outline-warning">Update</button>
+                <!--<button type="button" class="btn btn-danger">Update</button>-->
+                <button id="btnSave" type="button" class="btn btn-outline-success">Save Customer</button>
+                <!--<button id="btnSaveOrUpdate" type="button" class="btn btn-success">Save Or Update</button>-->
+            </form>
+        </div>
+
+        <div class="col-12 mt-3 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <form>
+                <div class="mb-3">
+                    <label for="txtCusId" class="form-label">Customer ID :</label>
+                    <input type="email" class="form-control" id="txtCusId" aria-describedby="emailHelp">
+                    <p><small class="text-danger pl-1" id="lblCusId"></small></p>
+                </div>
+
+                <div class="mb-3">
+                    <label for="txtCusName" class="form-label">Customer Name :</label>
+                    <input type="email" class="form-control" id="txtCusName" aria-describedby="emailHelp">
+                    <p><small class="text-danger pl-1" id="lblCusName"></small></p>
+                </div>
+
+                <div class="mb-3">
+                    <label for="txtCusAddress" class="form-label">Customer Address :</label>
+                    <input type="email" class="form-control" id="txtCusAddress" aria-describedby="emailHelp">
+                    <p><small class="text-danger pl-1" id="lblCusAddress"></small></p>
+                </div>
+
+                <div class="mb-3">
+                    <label for="txtCusSalary" class="form-label">Customer Salary :</label>
+                    <input type="email" class="form-control" id="txtCusSalary" aria-describedby="emailHelp">
+                    <p><small class="text-danger pl-1" id="lblCusSalary"></small></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-12 mt-3 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table table-hover">
+                <thead class="bg-secondary bg-opacity-10 text-center">
+                <tr>
+                    <th scope="col">Customer ID</th>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Customer Address</th>
+                    <th scope="col">Customer Salary</th>
+                </tr>
+                </thead>
+                <tbody id="customerTable" class="text-center">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+</section>
+<!--Customer manage end-->
+
+<!--item manage start-->
+<section id="itemContent" class="container-fluid mt-3">
+    <section class="row mt-3 justify-content-around">
+
+        <div class="col-12 mt-5 col-sm-4 col-md-4 col-lg-4 col-xl-5 col-xxl-5">
+            <h2>Item Manage</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="txtSearchItemCode" class="form-label">Search item :</label>
+                    <input id="txtSearchItemCode" type="email" class="form-control" aria-describedby="emailHelp">
+                    <div id="itemHelp" class="form-text">You have the ability to do the customers search you want.</div>
+                </div>
+                <button id="btnSearchItem" type="button" class="btn btn-outline-primary">Search</button>
+                <!--<button type="button" class="btn btn-primary">Search</button>-->
+                <button id="btnClearItem" type="button" class="btn btn-outline-danger">Clear</button>
+                <!--<button type="button" class="btn btn-danger">Delete</button>-->
+                <button id="btnUpdateItem" type="button" class="btn btn-outline-warning">Update</button>
+                <!--<button type="button" class="btn btn-danger">Update</button>-->
+                <button id="btnSaveItem" type="button" class="btn btn-outline-success">Save Item</button>
+                <!--<button id="btnItemSaveOrUpdate" type="button" class="btn btn-success">Save Or Update</button>-->
+            </form>
+        </div>
+
+        <div class="col-12 mt-3 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <form>
+                <div class="mb-3">
+                    <label for="txtItemCode" class="form-label">Item Code :</label>
+                    <input type="email" class="form-control" id="txtItemCode" aria-describedby="emailHelp">
+                    <p><small class="text-danger pl-1" id="lblItemCode"></small></p>
+                </div>
+
+                <div class="mb-3">
+                    <label for="txtItemName" class="form-label">Item Name :</label>
+                    <input type="email" class="form-control" id="txtItemName" aria-describedby="emailHelp">
+                    <p><small class="text-danger pl-1" id="lblItemName"></small></p>
+                </div>
+
+                <div class="mb-3">
+                    <label for="txtItemQty" class="form-label">Item Qty :</label>
+                    <input type="email" class="form-control" id="txtItemQty" aria-describedby="emailHelp">
+                    <p><small class="text-danger pl-1" id="lblItemQty"></small></p>
+                </div>
+
+                <div class="mb-3">
+                    <label for="txtItemPrice" class="form-label">Item Price :</label>
+                    <input type="email" class="form-control" id="txtItemPrice" aria-describedby="emailHelp">
+                    <p><small class="text-danger pl-1" id="lblItemPrice"></small></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-12 mt-3 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table id="tblItem" class="table table-hover">
+                <thead class="text-dark bg-secondary bg-opacity-10 text-center">
+                <tr>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Item Qty</th>
+                    <th scope="col">Item Price.</th>
+                </tr>
+                </thead>
+                <tbody id="itemTable" class="text-center">
+
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+</section>
+<!--item manage end-->
+
+<!--Order manage start-->
+<!--<section id="orderContent" class="container-fluid mt-3">
+    <section class="row mt-3 justify-content-around">
+
+        <div class="col-12">
+            <h2>Purchase Order</h2>
+        </div>
+
+    </section>
+</section>-->
+<!--invoice Details-->
+<section id="orderContent" class="container-fluid">
+    <section class="row mt-3">
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+            <form>
+                <div class="mx-1 col-12 text-dark text-center fw-bold bg-primary bg-opacity-25 card-header" style="font-size: 20px">Invoice Detail</div>
+                <div class="card col-12 mx-1">
+                    <div class="card-body">
+                        <div class="form-group col-5 d-inline-block mx-3">
+                            <label for="orderId" class="form-label">Order ID :</label>
+                            <input type="text" class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id="orderId" aria-describedby="orderId">
+                        </div>
+
+                        <div class="form-group col-5 d-inline-block m-lg-2">
+                            <label for="orderDate" class="form-label">Order Date :</label>
+                            <input type="date" class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id=orderDate aria-describedby="orderDate">
+                        </div>
+
+                        <div class="mx-3 mt-2 col-5 d-inline-block">
+                            <label for="cmbCustomer" class="form-label">Customer :</label>
+                            <select id="cmbCustomer" class="form-select btn-outline-primary bg-light bg-opacity-50 text-dark">
+                                <option>Select Customer</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-5 d-inline-block m-lg-2 mx-3">
+                            <label for="txtOCustomerId" class="form-label">Customer Id :</label>
+                            <input type="text" class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id=txtOCustomerId>
+                        </div>
+
+                        <div class="form-group col-5 d-inline-block mx-3">
+                            <label for="txtOCustomerName" class="form-label">Customer Name :</label>
+                            <input type="text" class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id="txtOCustomerName" aria-describedby="orderId">
+                        </div>
+
+                        <div class="form-group col-5 d-inline-block m-lg-2 mx-3">
+                            <label for="txtOCustomerSalary" class="form-label">Customer Salary :</label>
+                            <input type="text" class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id=txtOCustomerSalary>
+                        </div>
+
+                        <div class="form-group col-11 d-inline-block mx-lg-3 m-lg-2">
+                            <label for="txtOCustomerAddress" class="form-label">Customer Address :</label>
+                            <input type="text" class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id="txtOCustomerAddress" aria-describedby="orderId">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!--Item Select-->
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+            <form>
+                <div class="mx-1 col-12 text-dark text-center fw-bold bg-danger bg-opacity-25 card-header" style="font-size: 20px">Item Select</div>
+                <div class="card col-12 mx-1">
+                    <div class="card-body">
+                        <div class="mx-3 mt-2 col-5 d-inline-block">
+                            <label for="cmbItems" class="form-label">Item :</label>
+                            <select id="cmbItems" class="form-select btn-outline-danger bg-light bg-opacity-50 text-dark">
+                                <option>Select Item</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-5 d-inline-block mx-3 m-lg-2">
+                            <label for="txtOItemCode" class="form-label">Item Code :</label>
+                            <input type="text" class="form-control btn-outline-danger bg-light bg-opacity-50 text-dark" id="txtOItemCode">
+                        </div>
+
+                        <div class="form-group col-5 d-inline-block mx-3">
+                            <label for="txtOItemName" class="form-label">Item Name :</label>
+                            <input type="text" class="form-control btn-outline-danger bg-light bg-opacity-50 text-dark" id="txtOItemName">
+                        </div>
+
+                        <div class="form-group col-5 d-inline-block m-lg-2 mx-3">
+                            <label for="txtOItemPrice" class="form-label">Price :</label>
+                            <input type="text" class="form-control btn-outline-danger bg-light bg-opacity-50 text-dark" id=txtOItemPrice>
+                        </div>
+
+                        <div class="form-group col-11 d-inline-block mx-lg-3 m-lg-2">
+                            <label for="txtOQtyOnHand" class="form-label">QTY On Hand :</label>
+                            <input type="text" class="form-control btn-outline-danger bg-light bg-opacity-50 text-dark" id="txtOQtyOnHand" aria-describedby="orderId">
+                        </div>
+
+                        <div class="form-group col-5 d-inline-block mt-lg-2 mx-3">
+                            <label for="txtOQuantity" class="form-label">Order Quantity :</label>
+                            <input type="text" class="form-control btn-outline-danger bg-light bg-opacity-50 text-dark" id="txtOQuantity">
+                        </div>
+
+                        <button id="btnAddToCart" type="button" class="btn btn-danger mx-5 mb-2 bg-danger bg-opacity-25 text-dark btn-outline-light w-auto">Add Item</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!--Payment Details-->
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+            <form>
+                <div class="mx-0 col-12 text-dark text-center fw-bold bg-warning bg-opacity-50 card-header" style="font-size: 20px">Payment Details</div>
+                <div class="card col-12 mx-0">
+                    <div class="card-body">
+                        <div class="mx-3 mt-2 col-5 d-inline-block">
+                            <label class="form-label">Total :</label>
+                        </div>
+
+                        <div class="mx-3 col-5">
+                            <label class="form-label fs-4">00.00 Rs/= </label>
+                        </div>
+
+                        <div class="mx-3 mt-2 col-5 d-inline-block">
+                            <label class="form-label">Sub Total :</label>
+                        </div>
+
+                        <div class="mx-3 col-5">
+                            <label class="form-label fs-4">00.00 Rs/= </label>
+                        </div>
+
+                        <div class="form-group col-5 d-inline-block mx-lg-3 m-lg-2">
+                            <label for="txtCash" class="form-label">Cash :</label>
+                            <input type="text" class="form-control btn-outline-warning bg-light bg-opacity-50 text-dark" id="txtCash">
+                        </div>
+
+                        <div class="form-group col-5 d-inline-block mx-2">
+                            <label for="txtDiscount" class="form-label">Discount :</label>
+                            <input type="text" class="form-control btn-outline-warning bg-light bg-opacity-50 text-dark" id="txtDiscount">
+                        </div>
+
+                        <div class="form-group col-5 d-inline-block m-lg-2 mx-lg-3">
+                            <label for="txtBalance" class="form-label">Balance :</label>
+                            <input type="text" class="form-control btn-outline-warning bg-light bg-opacity-50 text-dark" id="txtBalance">
+                        </div>
+
+                        <button type="button" class="btn btn-danger mx-5 mb-2 bg-warning bg-opacity-50 text-dark btn-outline-light w-auto">Purchase</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!--Order Table-->
+
+        <div class="col-12 mt-3 col-sm-12 col-md-6 col-lg-6 col-xl-12 col-xxl-12">
+            <table class="table table-hover">
+                <thead class="bg-secondary bg-opacity-10 text-center">
+                <tr>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Unit Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                </tr>
+                </thead>
+                <tbody id="orderTable" class="text-center">
+
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+</section>
+<!--Order manage end-->
+
+<!--import-->
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="db/DB.js"></script>
+<script src="controller/DashBoardController.js"></script>
+<script src="controller/CustomerController.js"></script>
+<script src="controller/ItemController.js"></script>
+<script src="controller/OrderController.js"></script>
+<script src="dto/CustomerDTO.js"></script>
+<script src="dto/ItemDTO.js"></script>
+<script src="dto/OrderDTO.js"></script>
+
+</body>
+</html>
