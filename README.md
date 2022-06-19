@@ -1,5 +1,5 @@
 <h3 align="center">
-Who am i ?
+Who am i :rat:?
 </h3>
 
 <h6 align="center">
@@ -31,7 +31,7 @@ Mobile UI
 ***
 
 <h6 align="center">
-dev environment
+dev environment :microscope:
 </h6>
 
 <div align="center">
@@ -39,7 +39,7 @@ dev environment
 </div>
 
 <h6 align="center">
-design environments
+design environments :art:
 </h6>
 
 <div align="center">
