@@ -1,5 +1,5 @@
 <h3 align="center">
-Who am i :rat:?
+Who am i :penguin:?
 </h3>
 
 <h6 align="center">
